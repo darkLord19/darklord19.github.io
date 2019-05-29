@@ -1,5 +1,5 @@
 body{
-    background-color: #81C784;
+    background-color: #263238;
     padding-left:100px;
     padding-top: 50px;
     padding-right: 100px;
@@ -18,7 +18,7 @@ img{
 
 a, a:visited{
   text-decoration: none;
-  color: #FF1744;
+  color: #E57373;
 }
 
 p{

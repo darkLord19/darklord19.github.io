@@ -1,8 +1,10 @@
+@font-face{font-family:"Atkinson Hyperlegible Next";font-style:normal;font-weight:200 800;font-display:swap;src:url(fonts/atkinson-next.woff2) format("woff2")}
+@font-face{font-family:"Atkinson Hyperlegible Next";font-style:italic;font-weight:200 800;font-display:swap;src:url(fonts/atkinson-next-italic.woff2) format("woff2")}
 :root{--bg:#f4f3ef;--ink:#161616;--muted:#5b5a55;--accent:#d63a1c;--line:#c9c7bf;color-scheme:light dark}
 @media (prefers-color-scheme:dark){:root{--bg:#151514;--ink:#ecebe6;--muted:#9a988f;--accent:#ff6a4a;--line:#3a3935}}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:18px;line-height:1.6}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:18px;line-height:1.6}
 .page{min-height:100vh;min-height:100dvh;padding:32px 24px 56px;display:flex;flex-direction:column}
 main{width:100%;max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:32px;flex:1}
 a{color:var(--ink);text-underline-offset:4px}
@@ -16,9 +18,9 @@ html:not(.js) .drop{display:none}
 .box{position:relative;height:440px;border-bottom:2px solid var(--ink);overflow:hidden;touch-action:pan-y}
 @media (max-width:687px){.box{height:300px}}
 /* static fallback word, sits on the floor line */
-.word{position:absolute;left:0;right:0;bottom:0;text-align:center;font-family:Fraunces,Georgia,serif;font-weight:800;font-size:clamp(72px,22.7vw,200px);line-height:.8;white-space:nowrap}
+.word{position:absolute;left:0;right:0;bottom:0;text-align:center;font-family:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:800;font-size:clamp(72px,22.7vw,200px);line-height:.8;white-space:nowrap}
 .dot,.letter.dot{color:var(--accent)}
-.letter{position:absolute;left:0;top:0;display:flex;align-items:flex-end;justify-content:center;font-family:Fraunces,Georgia,serif;font-weight:800;line-height:.8;color:var(--ink);cursor:grab;user-select:none;-webkit-user-select:none;touch-action:none;will-change:transform}
+.letter{position:absolute;left:0;top:0;display:flex;align-items:flex-end;justify-content:center;font-family:"Atkinson Hyperlegible Next",system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:800;line-height:.8;color:var(--ink);cursor:grab;user-select:none;-webkit-user-select:none;touch-action:none;will-change:transform}
 .letter.grabbing{cursor:grabbing}
 .about{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:24px 48px}
 .about p{margin:0;max-width:40ch;flex:1 1 320px}
